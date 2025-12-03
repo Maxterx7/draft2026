@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <!-- Bootstrap (vía CDN, opcional) -->
+  <!-- Bootstrap (vía CDN) -->
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -163,7 +163,7 @@
       background-color: #ffffff;
     }
 
-    /* BENEFITS ECONOMICOS */
+    /* BENEFICIOS ECONOMICOS */
 
     #beneficios {
       background-color: var(--imss-gray-bg);
@@ -281,11 +281,15 @@
 
     .locality-body {
       padding: 1rem 1.1rem 1.2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+      flex: 1;
     }
 
     .locality-name {
       font-weight: 600;
-      margin-bottom: 0.3rem;
+      margin-bottom: 0.1rem;
     }
 
     .locality-tag {
@@ -296,7 +300,7 @@
       background-color: var(--imss-gray-bg);
       padding: 0.15rem 0.55rem;
       border-radius: 999px;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.2rem;
       color: var(--imss-text-muted);
     }
 
@@ -304,6 +308,24 @@
       font-size: 0.9rem;
       color: var(--imss-text-muted);
       margin: 0;
+    }
+
+    .locality-link {
+      align-self: flex-start;
+      margin-top: 0.3rem;
+      font-size: 0.8rem;
+      color: var(--imss-green);
+      border-radius: 999px;
+      border: 1px solid var(--imss-green-light);
+      padding: 0.25rem 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .locality-link:hover {
+      background-color: var(--imss-green-light);
+      color: #ffffff;
     }
 
     /* PLAZAS VACANTES */
@@ -482,9 +504,30 @@
       color: var(--imss-text-muted);
     }
 
-    .cta-mail {
+    .contact-name {
       font-weight: 600;
-      color: var(--imss-green);
+      font-size: 1.05rem;
+      color: #ffffff;
+    }
+
+    .contact-card {
+      background-color: #020617;
+      border-radius: 0.9rem;
+      padding: 1.1rem 1.3rem;
+      color: #e5e7eb;
+      height: 100%;
+    }
+
+    .contact-phone {
+      color: #facc6b;
+      font-size: 0.95rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .contact-mail a {
+      color: #e5e7eb;
+      font-size: 0.9rem;
+      word-break: break-all;
     }
 
     footer {
@@ -685,7 +728,7 @@
             <div class="life-icon">🌊</div>
             <h4>Naturaleza y mar</h4>
             <p>
-              playas, desierto, montañas y vida marina única en el mundo. Terminar una guardia e ir al mar, caminar en el
+              Playas, desierto, montañas y vida marina única en el mundo. Terminar una guardia e ir al mar, caminar en el
               malecón o disfrutar atardeceres espectaculares es parte de la rutina diaria.
             </p>
           </div>
@@ -757,6 +800,9 @@
                 Ciudad costera con malecón emblemático, servicios de alta especialidad, universidades y una vida
                 cotidiana tranquila, ideal para familias y para el desarrollo profesional continuo.
               </p>
+              <a class="locality-link" href="https://www.google.com/search?tbm=isch&q=La+Paz+Baja+California+Sur" target="_blank" rel="noopener noreferrer">
+                Ver fotos en Google
+              </a>
             </div>
           </div>
         </div>
@@ -770,6 +816,9 @@
                 Comunidad estratégica en el valle agrícola del municipio de Comondú. Ofrece un ritmo de vida calmado,
                 costos accesibles y una fuerte vinculación con la población derechohabiente.
               </p>
+              <a class="locality-link" href="https://www.google.com/search?tbm=isch&q=Ciudad+Constituci%C3%B3n+Baja+California+Sur" target="_blank" rel="noopener noreferrer">
+                Ver fotos en Google
+              </a>
             </div>
           </div>
         </div>
@@ -783,6 +832,9 @@
                 Localidad reconocida por sus salinas y por el avistamiento de ballena gris. Su carácter de zona aislada
                 se acompaña de estímulos económicos adicionales y una vida comunitaria cercana.
               </p>
+              <a class="locality-link" href="https://www.google.com/search?tbm=isch&q=Guerrero+Negro+Baja+California+Sur" target="_blank" rel="noopener noreferrer">
+                Ver fotos en Google
+              </a>
             </div>
           </div>
         </div>
@@ -796,6 +848,9 @@
                 Entorno insular con población compacta y fuerte sentido de comunidad. Representa un reto profesional y
                 una experiencia de vida única en contacto estrecho con la naturaleza.
               </p>
+              <a class="locality-link" href="https://www.google.com/search?tbm=isch&q=Isla+de+Cedros+Baja+California+Sur" target="_blank" rel="noopener noreferrer">
+                Ver fotos en Google
+              </a>
             </div>
           </div>
         </div>
@@ -809,6 +864,9 @@
                 Punto turístico internacional con amplia oferta de servicios, conectividad aérea y un sistema de salud
                 que atiende tanto a población residente como flotante.
               </p>
+              <a class="locality-link" href="https://www.google.com/search?tbm=isch&q=Cabo+San+Lucas+Baja+California+Sur" target="_blank" rel="noopener noreferrer">
+                Ver fotos en Google
+              </a>
             </div>
           </div>
         </div>
@@ -822,6 +880,9 @@
                 Ciudad con fuerte vocación turística y cultural, cercana al aeropuerto internacional de Los Cabos, con
                 servicios educativos y recreativos para toda la familia.
               </p>
+              <a class="locality-link" href="https://www.google.com/search?tbm=isch&q=San+Jos%C3%A9+del+Cabo+Baja+California+Sur" target="_blank" rel="noopener noreferrer">
+                Ver fotos en Google
+              </a>
             </div>
           </div>
         </div>
@@ -856,12 +917,12 @@
           </div>
         </div>
 
-        <!-- HGZ/MF 1 -->
+        <!-- HGZ/MF 1 + UMF 34 -->
         <div class="unit-card">
           <div class="unit-header">
             <div class="unit-icon">🏥</div>
             <div>
-              <div class="unit-name">Hosp. Gral. Zona MF 1</div>
+              <div class="unit-name">HGZ/MF 1 y UMF 34</div>
               <div class="unit-sub">La Paz, Baja California Sur</div>
             </div>
           </div>
@@ -880,25 +941,19 @@
                   <td>#638</td>
                   <td class="specialty">Radiodiagnóstico</td>
                   <td>Jornada Acumulada</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#680</td>
                   <td class="specialty">Oncología Quirúrgica</td>
                   <td>Matutino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#901</td>
                   <td class="specialty">Otorrinolaringología</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#903</td>
@@ -913,113 +968,84 @@
                   <td>#3141</td>
                   <td class="specialty">Gastroenterología</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#4613</td>
                   <td class="specialty">Endoscopía</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#4617</td>
                   <td class="specialty">Oncología Médica</td>
                   <td>Matutino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#5129</td>
                   <td class="specialty">Infectología</td>
                   <td>Matutino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#9499</td>
                   <td class="specialty">Urología</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#9505</td>
                   <td class="specialty">Dermatología</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#9508</td>
                   <td class="specialty">Nefrología</td>
                   <td>Jornada Acumulada</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#9512</td>
                   <td class="specialty">Neurología Pediátrica</td>
                   <td>Matutino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#17664</td>
                   <td class="specialty">Hemodinamia</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#17821</td>
                   <td class="specialty">Radiodiagnóstico</td>
                   <td>Matutino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#17825</td>
                   <td class="specialty">Radiodiagnóstico</td>
                   <td>Jornada Acumulada</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#18395</td>
                   <td class="specialty">Alergia e Inmunología</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
                 <tr class="vacancy-row">
                   <td>#18427</td>
                   <td class="specialty">Proctología</td>
                   <td>Vespertino</td>
-                  <td>
-                    <span class="badge-contract badge-def">Definitiva</span>
-                  </td>
+                  <td><span class="badge-contract badge-def">Definitiva</span></td>
                 </tr>
               </tbody>
             </table>
           </div>
         </div>
-
-        <!-- UMF 34 ya incluida arriba porque unidades están por nombre, pero datos 4613/4617 son UMF 34.
-             Si quieres separarlos en otra tarjeta, puedes duplicar filas y reacomodarlas. -->
       </div>
 
       <!-- CIUDAD CONSTITUCIÓN -->
@@ -1447,7 +1473,7 @@
   <!-- CONTACTO -->
   <section id="contacto">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mb-4">
         <div class="col-lg-8">
           <div class="cta-box">
             <h3>Da el siguiente paso en tu carrera como Médico Especialista</h3>
@@ -1457,15 +1483,30 @@
               extraordinaria. Si eres Médico Especialista, aquí no solo tendrás un trabajo: tendrás futuro, tendrás paz y
               tendrás calidad de vida.
             </p>
-            <p class="mb-3">
-              Si deseas más información sobre el proceso de asignación de plazas, requisitos o detalles específicos de
-              cada localidad, puedes escribirnos:
-            </p>
             <p class="mb-0">
-              <a href="mailto:reclutamiento.medicos.bcs@example.com" class="cta-mail">
-                reclutamiento.medicos.bcs@example.com
-              </a>
+              Para mayor información sobre las plazas, procesos de asignación y requisitos, puedes contactar a nuestro equipo de reclutamiento de Médicos Especialistas en Baja California Sur:
             </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3 g-md-4">
+        <div class="col-md-6">
+          <div class="contact-card">
+            <div class="contact-name">Marco Antonio Sandoval</div>
+            <div class="contact-phone">615 11 1 05 44</div>
+            <div class="contact-mail">
+              <a href="mailto:marco.sandovalj@imss.gob.mx">marco.sandovalj@imss.gob.mx</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contact-card">
+            <div class="contact-name">Genoveva Cota Sandez</div>
+            <div class="contact-phone">612 14 1 65 44</div>
+            <div class="contact-mail">
+              <a href="mailto:genoveva.cota@imss.gob.mx">genoveva.cota@imss.gob.mx</a>
+            </div>
           </div>
         </div>
       </div>
@@ -1488,7 +1529,7 @@
       if (span) span.textContent = count;
     });
 
-    // Resaltar enlace activo al hacer scroll suave
+    // Scroll suave desde el menú
     const navLinks = document.querySelectorAll(".navbar-custom .nav-link");
     navLinks.forEach(link => {
       link.addEventListener("click", function (e) {
